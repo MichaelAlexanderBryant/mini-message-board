@@ -1,6 +1,9 @@
-<h1>Mini-Message Board</h1>
+{% extends 'base.html' %}
+
+{% block content %}
 {% for post in post_list %}
 <ul>
     <li>{{ post.user }}: {{ post.message }}</li>
 </ul>
 {% endfor %}
+{% endblock content%}
