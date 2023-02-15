@@ -3,7 +3,7 @@
 {% block content %}
 {% for post in post_list %}
 <ul>
-    <li>{{ post.user }}: {{ post.message }}</li>
+    <li>{{ post.user }} ({{ post.post_date }} US/Pacific): {{ post.message }}</li>
 </ul>
 {% endfor %}
-{% endblock content%}
+{% endblock content %}
