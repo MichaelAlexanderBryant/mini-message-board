@@ -1,0 +1,6 @@
+<h1>Mini-Message Board</h1>
+{% for post in post_list %}
+<ul>
+    <li>{{ post.user }}: {{ post.message }}</li>
+</ul>
+{% endfor %}
